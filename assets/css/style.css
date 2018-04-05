@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+    font-family: 'Stylish', sans-serif;
+    text-align: center;
+
+}
+.main-section {
+    width: 100%;
+}
+h1 {
+    font-family:'Berkshire Swash', cursive;
+    font-size: 65px;
+    color: white;
+    margin: auto;
+}
+ul {
+    list-style: none;
+}
+ul li {
+    background: #cce5ff;
+    margin: 5px; 
+}
+.bullets {
+    width: 25px;
+    height: 25px;
+}
+.super-container{
+    margin:auto;
+    color: #483d8b;
+    text-align: center;
+
+}
+.random-number {
+    border: 3px double #cce5ff;
+    height: 100px;
+    width: 50%;
+    float: left;
+    font-size: 40px;
+    padding: 20px;
+
+    
+}
+.score-keeper {
+    height: 100px; 
+    width: 50%;
+    border: 3px double #cce5ff;
+    text-align: left;
+    float: left;
+    font-size: 20px;
+
+    
+}
+.crystal {
+    clear: both;
+    width: 100%;
+    margin-top: 150px;
+}
+.jewels {
+    width: 90px;
+    height: 90px;
+
+}
+.score {
+    border: 3px double #cce5ff;
+    color: #483d8b;
+
+}
+.crystal-count {
+    border: 3px double #cce5ff;
+    color: #483d8b;
+
+}
