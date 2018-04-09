@@ -3,13 +3,19 @@ $(document).ready(function() {
 // define global variables   
     var wins = 0;
     var losses = 0;
+    var gemCount = 0;
 
         //generates random number between 19-120 at the start of the game
             // = (max-min+1)+min
     var randomNumber = (Math.floor(Math.random() * 102) + 19);
-    var gemCount = 0;
     
-    
+    //console log what the random number is
+    console.log('computer # = ' + randomNumber);
+
+    //displaying the random number
+    $('.random-number').text(randomNumber);
+
+
     // each crystal should have random number btw 1-12
     var gemOne = (Math.floor(Math.random() * 12) + 1);
         console.log('1 = ' + gemOne);
@@ -21,11 +27,7 @@ $(document).ready(function() {
         console.log('4 = ' + gemFour);
 
 
-    //console log what the random number is
-    console.log('computer # = ' + randomNumber);
-
-    //displaying the random number
-    $('.random-number').text(randomNumber);
+    
 
 // player clicks on crystal
     $('#crystal-1').on('click', function(){
@@ -73,16 +75,13 @@ $(document).ready(function() {
         }            
     });
     
-
-// this will update the players total score
-
-// player wins if their total matches the random number
+// player wins if 
 function winner() {
     wins++;
     $('#wins').text('Wins ' + wins);
     reset();
 };
-// player loses if score goes above the random number
+// player loses
 function loser () {
     losses ++;
     $('#losses').text('Losses ' + losses);
@@ -93,14 +92,14 @@ function reset() {
     randomNumber = (Math.floor(Math.random() *101) + 19);
         console.log('new # = ' + randomNumber);
     $('.random-number').text(randomNumber);
-    var gemOne = (Math.floor(Math.random() * 12) + 1);
-        console.log('gemOne new # ' + gemOne);
-    var gemTwo = (Math.floor(Math.random() * 12) + 1);
-        console.log('gemTwo new # ' + gemTwo);
-    var gemThree = (Math.floor(Math.random() * 12) + 1);
-        console.log('gemThree new # ' + gemThree);
-    var gemFour = (Math.floor(Math.random() * 12) + 1);
-        console.log('gemFour new # ' + gemFour);
+     gemOne = (Math.floor(Math.random() * 12) + 1);
+        console.log('1 new # ' + gemOne);
+     gemTwo = (Math.floor(Math.random() * 12) + 1);
+        console.log('2 new # ' + gemTwo);
+     gemThree = (Math.floor(Math.random() * 12) + 1);
+        console.log('3 new # ' + gemThree);
+     gemFour = (Math.floor(Math.random() * 12) + 1);
+        console.log('4 new # ' + gemFour);
     gemCount = 0;
     $('.crystal-count').text(gemCount);
 
